@@ -1,0 +1,17 @@
+/* tag selectors */
+
+p{
+    color: blue;
+}
+
+/* class selectors */
+
+.paragraph{
+    border: 2px solid black;
+}
+
+/* id selectors */
+
+#first-para{
+    background-color: aquamarine;
+}
