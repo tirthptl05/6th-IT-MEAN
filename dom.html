@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    <style>
+        .light{
+            background-color: lightgray;
+            color: blue;
+        }
+        .dark{
+            background-color: black;
+            color: white;
+        }
+    </style>           
+    </head>
+    <body id="page">
+        <h1>Welcome to DOM</h1>
+        <button onclick="changetheme()">Black theme</button>
+    </body>
+</html> 
+
+<script>
+    let body = document.getElementById("page");
+
+    let isLight = true;
+
+    function changetheme(){
+        if(isLight){
+            body.classList.remove("light");
+            body.classList.add("dark");
+            isLight = false;
+        } else {
+            body.classList.remove("dark");
+            body.classList.add("light");
+            isLight = true;
+        }
+    }
+        
+</script>
